@@ -1,177 +1,177 @@
-// // let name = "Prabhat"
-// // console.log(name;
+// // // let name = "Prabhat"
+// // // console.log(name;
 
 
-// // )
+// // // )
 
-// let number = 10;
+// // let number = 10;
 
-// number.toUpperCase();
+// // number.toUpperCase();
 
-// let name = "  prabhat  ";
-// let result = name.trim().toUpperCase();console.log(result);// "PRABHAT"
+// // let name = "  prabhat  ";
+// // let result = name.trim().toUpperCase();console.log(result);// "PRABHAT"
 
-// let text = "Hello, World!";
-// let result = text.replace("World", "JavaScript");
-// console.log(text); // "Hello, World!"
-// console.log(result); // "Hello, JavaScript!"
+// // let text = "Hello, World!";
+// // let result = text.replace("World", "JavaScript");
+// // console.log(text); // "Hello, World!"
+// // console.log(result); // "Hello, JavaScript!"
 
-// try {
-//     console.log(username);
-// } catch (error) {
-//     console.log("Something went wrong!");
-// }
-
-// try {
-//     console.log(username);
-// } catch (error) {
-//     console.log(error.message);
-// }
-
-// try {
-//     console.log("Trying...");
-// } catch (error) {
-//     console.log("Error occurred");
-// } finally {
-//     console.log("Finished");
-// }
-
-// let password = "1234";
-
-// if (password.length < 8) {
-//     console.warn("Warning: Password is too short!");
+// // try {
+// //     console.log(username);
+// // } catch (error) {
+// //     console.log("Something went wrong!");
 // // }
-// let password = "1234";
 
-// if (password.length < 8) {
-//     console.log("Warning: Password is too short!");
+// // try {
+// //     console.log(username);
+// // } catch (error) {
+// //     console.log(error.message);
+// // }
+
+// // try {
+// //     console.log("Trying...");
+// // } catch (error) {
+// //     console.log("Error occurred");
+// // } finally {
+// //     console.log("Finished");
+// // }
+
+// // let password = "1234";
+
+// // if (password.length < 8) {
+// //     console.warn("Warning: Password is too short!");
+// // // }
+// // let password = "1234";
+
+// // if (password.length < 8) {
+// //     console.log("Warning: Password is too short!");
+// // }
+
+// console.log("Day 4 JavaScript Practice");
+
+// console.log("Normal message");
+// console.warn("This is a warning");
+// console.error("This is an error message");
+
+// try {
+//     let result = unknownVariable + 10;
+//     console.log(result);
+// } catch (error) {
+//     console.error("ReferenceError:", error.message);
 // }
 
-console.log("Day 4 JavaScript Practice");
+// try {
+//     let number = 100;
+//     number.toUpperCase();
+// } catch (error) {
+//     console.error("TypeError:", error.message);
+// }
 
-console.log("Normal message");
-console.warn("This is a warning");
-console.error("This is an error message");
+// try {
+//     let number = 10;
+//     number.toFixed(200);
+// } catch (error) {
+//     console.error("RangeError:", error.message);
+// }
 
-try {
-    let result = unknownVariable + 10;
-    console.log(result);
-} catch (error) {
-    console.error("ReferenceError:", error.message);
-}
+// try {
+//     throw new Error("Something went wrong");
+// } catch (error) {
+//     console.error("Custom Error:", error.message);
+// } finally {
+//     console.log("Error handling finished");
+// }
 
-try {
-    let number = 100;
-    number.toUpperCase();
-} catch (error) {
-    console.error("TypeError:", error.message);
-}
+// let numbers = new Set([10, 20, 20, 30, 30, 40]);
 
-try {
-    let number = 10;
-    number.toFixed(200);
-} catch (error) {
-    console.error("RangeError:", error.message);
-}
+// numbers.add(50);
+// numbers.delete(20);
 
-try {
-    throw new Error("Something went wrong");
-} catch (error) {
-    console.error("Custom Error:", error.message);
-} finally {
-    console.log("Error handling finished");
-}
+// console.log(numbers);
+// console.log(numbers.has(30));
 
-let numbers = new Set([10, 20, 20, 30, 30, 40]);
+// let students = new Map();
 
-numbers.add(50);
-numbers.delete(20);
+// students.set("name", "Prabhat");
+// students.set("age", 20);
+// students.set("course", "MERN");
 
-console.log(numbers);
-console.log(numbers.has(30));
+// console.log(students);
+// console.log(students.get("name"));
+// console.log(students.has("age"));
 
-let students = new Map();
+// let fruits = ["Apple", "Banana", "Mango"];
 
-students.set("name", "Prabhat");
-students.set("age", 20);
-students.set("course", "MERN");
+// let newFruits = [...fruits, "Orange", "Grapes"];
 
-console.log(students);
-console.log(students.get("name"));
-console.log(students.has("age"));
+// console.log(newFruits);
 
-let fruits = ["Apple", "Banana", "Mango"];
+// let user = {
+//     name: "Prabhat",
+//     age: 20
+// };
 
-let newFruits = [...fruits, "Orange", "Grapes"];
+// let newUser = {
+//     ...user,
+//     course: "MERN",
+//     city: "Dhangadhi"
+// };
 
-console.log(newFruits);
+// console.log(newUser);
 
-let user = {
-    name: "Prabhat",
-    age: 20
-};
+// function add(...numbers) {
+//     return numbers.reduce((total, number) => total + number, 0);
+// }
 
-let newUser = {
-    ...user,
-    course: "MERN",
-    city: "Dhangadhi"
-};
+// console.log(add(10, 20, 30, 40));
 
-console.log(newUser);
+// let person = {
+//     name: "Prabhat",
+//     age: 20,
 
-function add(...numbers) {
-    return numbers.reduce((total, number) => total + number, 0);
-}
+//     greet: function() {
+//         console.log("Hello " + this.name);
+//     }
+// };
 
-console.log(add(10, 20, 30, 40));
+// person.greet();
 
-let person = {
-    name: "Prabhat",
-    age: 20,
+// let originalUser = {
+//     name: "Prabhat"
+// };
 
-    greet: function() {
-        console.log("Hello " + this.name);
-    }
-};
+// let copiedUser = originalUser;
 
-person.greet();
+// copiedUser.name = "Karki";
 
-let originalUser = {
-    name: "Prabhat"
-};
+// console.log(originalUser.name);
+// console.log(copiedUser.name);
 
-let copiedUser = originalUser;
+// function createCounter() {
+//     let count = 0;
 
-copiedUser.name = "Karki";
+//     return function() {
+//         count++;
+//         console.log("Count:", count);
+//     };
+// }
 
-console.log(originalUser.name);
-console.log(copiedUser.name);
+// let counter = createCounter();
 
-function createCounter() {
-    let count = 0;
+// counter();
+// counter();
+// counter();
 
-    return function() {
-        count++;
-        console.log("Count:", count);
-    };
-}
+// document.cookie = "username=Prabhat";
 
-let counter = createCounter();
+// console.log(document.cookie);
 
-counter();
-counter();
-counter();
+// sessionStorage.setItem("username", "Prabhat");
+// sessionStorage.setItem("age", "20");
 
-document.cookie = "username=Prabhat";
+// console.log(sessionStorage.getItem("username"));
+// console.log(sessionStorage.getItem("age"));
 
-console.log(document.cookie);
+// sessionStorage.removeItem("age");
 
-sessionStorage.setItem("username", "Prabhat");
-sessionStorage.setItem("age", "20");
-
-console.log(sessionStorage.getItem("username"));
-console.log(sessionStorage.getItem("age"));
-
-sessionStorage.removeItem("age");
-
-console.log(sessionStorage.getItem("age"));
+// console.log(sessionStorage.getItem("age"));
