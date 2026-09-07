@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="Todo.css">
+
+    
+<body>
+    <header>
+    <div class="header-content">
+        <img
+            src="todo.png"
+            alt="To-Do List App icon"
+            width="80"
+        >
+
+        <div>
+            <h1>To-Do List</h1>
+            <p>Stay organized, get things done.</p>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section>
+            <h2> My tasks </h2>
+            <label for="SearchInput">Search tasks:</label>
+
+            <input
+            type="search"
+            id="SearchInput"
+            name="Search"
+            placeholder="Search tasks"
+            >
+        </section>
+
+        <section>
+            <h2> Add a new task </h2>
+            <form id ="todoForm">
+                <label for="taskInput">Task</label>
+                <input
+                    type ="text"
+                    id="taskInput"
+                    name="task"
+                    placeholder="Add a new task..."
+                    required
+                    >
+            <button type="submit">Add Task
+            </button>
+            </form>
+
+        </section>
+
+        <section>
+            <h2>To-Do List</h2>
+
+            <ul id="todolist">
+                <li class ="todo-item">
+                    <input
+                    type="checkbox"
+                    id ="task1"
+                    checked
+                    >
+                    <label for="task1"><del>Complete the project</del></label>
+
+                    <button type="button">Delete</button>
+
+                </li>
+                <li class ="todo-item">
+                    <input
+                    type="checkbox"
+                    id ="task2"
+                    >
+                    <label for="task2">Build a todo list app</label>
+
+                    <button type="button">Delete</button>
+
+                </li>
+                <li class ="todo-item">
+                    <input
+                    type="checkbox"
+                    id ="task3"
+                    >
+                    <label for="task3">Khana Ghich</label>
+
+                    <button type="button">Delete</button>
+
+                </li>
+                <li class ="todo-item">
+                    <input
+                    type = "checkbox"
+                    id = "task4"
+                    >
+                    <label for ="task4">vada ko dhune ho</label>
+                    <button type="button">Delete</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 To-Do List App. All rights reserved.
+    </footer>
+</body>
+</html>
