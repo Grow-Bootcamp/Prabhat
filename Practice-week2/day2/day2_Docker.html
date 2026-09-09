@@ -1,0 +1,61 @@
+<h1>Docker</h1>
+<p>Docker is a platform that packages an application together with everything it needs to run, such as dependencies, libraries, and configuration.
+
+Think of it as:
+
+“My application + everything it needs = one container.”
+
+Important concepts
+Image → Blueprint/template of an application.
+Container → Running instance of an image.
+Dockerfile → Instructions for creating an image.
+Docker Compose → Used to run multiple containers together.
+Port → Connects the container's application to your computer/network.
+Backend example
+
+Suppose you have a Node.js/Express backend.
+
+FROM node:20
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["npm", "start"]
+
+Then:
+
+docker build -t my-backend .
+docker run -p 5000:5000 my-backend
+
+Now your backend runs inside a Docker container.
+
+Frontend
+
+You can also Dockerize a React application.
+
+A common production setup is:
+
+React App
+   ↓
+npm run build
+   ↓
+Static files
+   ↓
+Nginx container
+Real-world project
+
+For a MERN application, you could have:
+
+Frontend → React Container
+Backend  → Express Container
+Database → MongoDB Container
+
+Docker Compose can start all three together.
+
+Main benefit: Your application behaves consistently across different computers.</p>
