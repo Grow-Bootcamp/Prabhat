@@ -59,3 +59,14 @@ Database → MongoDB Container
 Docker Compose can start all three together.
 
 Main benefit: Your application behaves consistently across different computers.</p>
+
+<p>
+   Why Docker is Popular
+✅ Consistent environments across development, testing, and production
+✅ Fast startup (seconds)
+✅ Lightweight compared to virtual machines
+✅ Easy deployment
+✅ Simplifies scaling applications
+✅ Works well with cloud platforms and Kubernetes
+</p>
+

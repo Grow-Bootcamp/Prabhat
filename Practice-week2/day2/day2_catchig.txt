@@ -1,0 +1,27 @@
+Caching भनेको के हो?
+
+Caching भनेको महँगो/समय लाग्ने कामको result लाई temporary रूपमा store गरेर राख्नु हो, 
+ताकि फेरि उही request आउँदा सुरुबाट काम गर्न नपरोस्।
+
+उदाहरण:
+
+पहिलो पटक:
+API → Database → Result → Cache मा Store
+
+दोस्रो पटक:
+API → Cache → Result ⚡
+
+यसले speed बढाउँछ, server load घटाउँछ र cost बचाउँछ।
+
+Caching का मुख्य तहहरू
+Browser / HTTP Cache 🌐
+Browser ले पहिले आएको response save गर्छ र फेरि आवश्यक पर्दा reuse गर्छ।
+CDN Cache 🚀
+Cloudflare, CloudFront जस्ता CDN ले data लाई user नजिकका servers मा राख्छ, जसले response छिटो हुन्छ।
+Application-level Cache 🖥️
+Backend ले frequently used data/result लाई memory वा Redis जस्ता system मा राख्छ।
+JavaScript Memory Cache 🧠
+JavaScript ले function को result वा API response memory मा राख्न सक्छ। यसलाई memoization पनि भनिन्छ।
+Service Worker Cache 📱
+Service Worker ले network request बीचमा intercept गरेर data cache गर्न सक्छ। यसले offline mode पनि सम्भव बनाउँछ।
+
