@@ -1,0 +1,42 @@
+Why Testing is Important in Backend?
+
+Backend contains important things like:
+
+APIs
+Authentication
+Database operations
+Business logic
+Payments
+User data
+
+A small bug can break the entire application.
+
+Testing helps us:
+
+🐛 Find bugs early
+🔒 Prevent security/logic mistakes
+🔄 Make sure old features don't break
+🚀 Deploy with confidence
+🧑‍💻 Refactor code safely
+📈 Maintain large projects
+Simple example
+
+Suppose we have:
+
+POST /users
+
+We expect:
+
+{
+  "name": "John",
+  "email": "john@gmail.com"
+}
+
+Testing can verify that:
+
+User is actually created
+Email is required
+Invalid email is rejected
+Correct HTTP status is returned
+Database contains the user
+
