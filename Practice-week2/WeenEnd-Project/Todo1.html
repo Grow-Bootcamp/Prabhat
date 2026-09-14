@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="Todo1.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <img
+                src="todo1.png"
+                alt="To-Do List App icon"
+                width="80">
+
+            <div>
+                <h1>To-Do List</h1>
+                <p>Small tasks. Big progress.</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+<!-- Search Section -->
+        <section>
+            <h2>My Tasks</h2>
+
+            <label for="SearchInput">Search tasks:</label>
+            <input
+                type="search"
+                id="SearchInput"
+                name="Search"
+                placeholder="Search tasks..."
+            >
+        </section>
+
+        <!-- Add Task Section -->
+        <section>
+            <h2>Add a New Task</h2>
+
+            <form id="todoForm">
+
+                <label for="taskInput">Task</label>
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    name="task"
+                    placeholder="Add a new task..."
+                    required >
+
+                <button type="submit">
+                    Add Task
+                </button>
+            </form>
+
+        </section>
+
+        <!-- Todo List Section -->
+        <section>
+            <h2>To-Do List</h2>
+
+            <ul id="todolist">
+                <!-- Tasks will be created here using JavaScript DOM manipulation. -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 To-Do List App. All rights reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Todo1.js"></script>
+
+</body>
+</html>
