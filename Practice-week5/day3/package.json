@@ -1,0 +1,33 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "seed": "tsx src/seed.ts",
+    "build": "tsc",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate",
+    "migration:run": "typeorm-ts-node-commonjs migration:run",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "class-validator": "^0.15.1",
+    "dotenv": "^18.0.7",
+    "mysql2": "^3.24.5",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.31"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typeorm-ts-node-commonjs": "^0.3.20",
+    "typeorm-ts-node-esm": "^0.3.20",
+    "typescript": "^5.9.3"
+  }
+}
