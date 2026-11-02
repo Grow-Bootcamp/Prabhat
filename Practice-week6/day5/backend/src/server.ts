@@ -18,6 +18,7 @@ app.use(cors({
 //middleware 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use("/api/auth",authRoutes);
 app.use("/api", protectedRoutes);
 
