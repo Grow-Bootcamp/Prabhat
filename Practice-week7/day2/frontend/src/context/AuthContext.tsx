@@ -32,14 +32,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const login = async (email: string, password: string) => {
         const response = await axios.post(
             "http://localhost:4000/api/auth/login",
-            {
-                email,
-                password,
-            },
-            {
-                withCredentials: true,
-            }
+            { email,password },
+            { withCredentials: true }
         );
+
+        console.log("LOGIN RESPONSE:", response.data);
+  console.log("USER ROLE:", response.data.user?.role);
+
         setUser(response.data.user);
         setAccessToken(response.data.accessToken);
     };
