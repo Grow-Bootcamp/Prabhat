@@ -1,0 +1,13 @@
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
